@@ -3,6 +3,7 @@ import { useLocation } from 'react-router-dom';
 import Navigation from '@/components/Navigation';
 import Dashboard from '@/pages/Dashboard';
 import History from '@/pages/History';
+import Rewards from '@/pages/Rewards';
 import HabitForm from '@/components/HabitForm';
 import { useHabits } from '@/hooks/useHabits';
 import { Habit } from '@/types/habit';
@@ -34,7 +35,7 @@ const Index = () => {
     if (path === '/history') {
       setCurrentPage('history');
     } else if (path === '/rewards') {
-      setCurrentPage('dashboard'); // Redirect rewards to dashboard for now
+      setCurrentPage('rewards');
     } else {
       setCurrentPage('dashboard');
     }
@@ -69,6 +70,16 @@ const Index = () => {
     switch (currentPage) {
       case 'history':
         return <History habits={habits} completions={completions} />;
+      case 'rewards':
+        return (
+          <Rewards
+            habits={habits}
+            walletState={walletState}
+            onConnectWallet={connectWallet}
+            onDisconnectWallet={disconnectWallet}
+            onClaimReward={claimReward}
+          />
+        );
       default:
         return (
           <Dashboard
@@ -88,7 +99,7 @@ const Index = () => {
     <div className="min-h-screen bg-background">
       <Navigation onAddHabit={handleAddHabit} />
       
-      <main className="container mx-auto px-4 py-6">
+      <main className="container mx-auto px-4 py-4">
         <AnimatePresence mode="wait">
           {showHabitForm ? (
             <motion.div

@@ -66,9 +66,9 @@ const Dashboard = ({
   const ftsoMultiplier = 1.23; // Mock multiplier from FTSO feeds
 
   return (
-    <div className="space-y-6 pb-20 md:pb-6">
+    <div className="space-y-4 pb-16 md:pb-4">
       {/* Wallet Section */}
-      <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
+      <div className="grid grid-cols-1 lg:grid-cols-3 gap-4">
         <div className="lg:col-span-2">
           <WalletConnect
             walletState={walletState}
@@ -87,7 +87,7 @@ const Dashboard = ({
       </div>
 
       {/* Stats Overview */}
-      <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+      <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
