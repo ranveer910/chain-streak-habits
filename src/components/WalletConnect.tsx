@@ -126,8 +126,8 @@ const WalletConnect = ({ walletState, onConnect, onDisconnect }: WalletConnectPr
         {/* Balances */}
         <div className="grid grid-cols-2 gap-4">
           <div className="text-center">
-            <p className="text-xs text-muted-foreground">HABIT Tokens</p>
-            <p className="text-lg font-bold text-token-gold">{walletState.habitBalance.toFixed(2)}</p>
+            <p className="text-xs text-muted-foreground">XLPR Tokens</p>
+            <p className="text-lg font-bold text-token-gold">{walletState.xlprBalance.toFixed(2)}</p>
           </div>
           <div className="text-center">
             <p className="text-xs text-muted-foreground">ETH Balance</p>

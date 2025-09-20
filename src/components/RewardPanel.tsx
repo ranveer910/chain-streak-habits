@@ -30,7 +30,7 @@ const RewardPanel = ({ availableReward, multiplier, totalStreaks, onClaimReward 
       
       toast({
         title: "Rewards Claimed! 🎉",
-        description: `You earned ${totalReward.toFixed(2)} HABIT tokens`,
+        description: `You earned ${totalReward.toFixed(2)} XLPR tokens`,
       });
     } catch (error) {
       toast({
@@ -57,7 +57,7 @@ const RewardPanel = ({ availableReward, multiplier, totalStreaks, onClaimReward 
         <div className="text-center">
           <h2 className="text-2xl font-bold mb-2">Rewards Center</h2>
           <p className="text-muted-foreground">
-            Claim your HABIT tokens with FTSO multipliers
+            Claim your XLPR tokens with FTSO multipliers
           </p>
         </div>
 
@@ -88,7 +88,7 @@ const RewardPanel = ({ availableReward, multiplier, totalStreaks, onClaimReward 
             <span className="text-muted-foreground">Base Reward</span>
             <div className="flex items-center gap-1">
               <Coins className="h-4 w-4 text-token-gold" />
-              <span className="font-semibold">{availableReward.toFixed(1)} HABIT</span>
+              <span className="font-semibold">{availableReward.toFixed(1)} XLPR</span>
             </div>
           </div>
           
@@ -112,7 +112,7 @@ const RewardPanel = ({ availableReward, multiplier, totalStreaks, onClaimReward 
                 <Gift className="h-5 w-5 text-token-gold" />
               </motion.div>
               <span className="font-bold text-token-gold">
-                {totalReward.toFixed(2)} HABIT
+                {totalReward.toFixed(2)} XLPR
               </span>
             </div>
           </div>

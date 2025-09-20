@@ -127,7 +127,7 @@ const HabitForm = ({ habit, onSave, onCancel }: HabitFormProps) => {
                   <span className="flex items-center justify-between w-full">
                     <span className="capitalize">{difficulty.label}</span>
                     <span className="text-token-gold font-semibold ml-4">
-                      {difficulty.reward} HABIT
+                      {difficulty.reward} XLPR
                     </span>
                   </span>
                 </SelectItem>
@@ -135,7 +135,7 @@ const HabitForm = ({ habit, onSave, onCancel }: HabitFormProps) => {
             </SelectContent>
           </Select>
           <p className="text-xs text-muted-foreground">
-            Higher difficulty habits earn more HABIT tokens per completion
+            Higher difficulty habits earn more XLPR tokens per completion
           </p>
         </div>
 

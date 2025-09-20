@@ -188,7 +188,7 @@ const Rewards = ({
                   <Coins className="h-4 w-4 text-primary-foreground" />
                 </div>
                 <div>
-                  <p className="font-medium">{reward.amount} HABIT</p>
+                  <p className="font-medium">{reward.amount} XLPR</p>
                   <p className="text-xs text-muted-foreground">
                     {new Date(reward.date).toLocaleDateString()}
                   </p>

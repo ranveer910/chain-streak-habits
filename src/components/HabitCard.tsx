@@ -100,7 +100,7 @@ const HabitCard = ({ habit, onComplete, onEdit }: HabitCardProps) => {
             <div className="flex items-center gap-1">
               <Star className="h-4 w-4 text-token-gold" />
               <span className="text-token-gold font-semibold">
-                {habit.baseReward} HABIT
+                {habit.baseReward} XLPR
               </span>
             </div>
           </div>

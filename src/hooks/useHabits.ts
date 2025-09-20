@@ -71,7 +71,7 @@ export const useHabits = () => {
   const [completions, setCompletions] = useState<HabitCompletion[]>(createMockCompletions);
   const [walletState, setWalletState] = useState<WalletState>({
     connected: false,
-    habitBalance: 0,
+    xlprBalance: 0,
     xrpBalance: 0,
     btcBalance: 0,
     ethBalance: 0,
@@ -81,7 +81,7 @@ export const useHabits = () => {
     setWalletState({
       connected: true,
       address: '0x742d35Cc4c2B2B5D4Fd2F1E2C02E7B3f8F8F8F8F',
-      habitBalance: 127.5,
+      xlprBalance: 127.5,
       xrpBalance: 1250.0,
       btcBalance: 0.0234,
       ethBalance: 2.4567,
@@ -91,7 +91,7 @@ export const useHabits = () => {
   const disconnectWallet = useCallback(() => {
     setWalletState({
       connected: false,
-      habitBalance: 0,
+      xlprBalance: 0,
       xrpBalance: 0,
       btcBalance: 0,
       ethBalance: 0,
@@ -178,7 +178,7 @@ export const useHabits = () => {
 
     setWalletState(prev => ({
       ...prev,
-      habitBalance: prev.habitBalance + totalReward,
+      xlprBalance: prev.xlprBalance + totalReward,
     }));
 
     // Reset completed today status

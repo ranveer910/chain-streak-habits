@@ -33,7 +33,7 @@ export interface HabitCompletion {
 export interface WalletState {
   connected: boolean;
   address?: string;
-  habitBalance: number;
+  xlprBalance: number;
   xrpBalance: number;
   btcBalance: number;
   ethBalance: number;
